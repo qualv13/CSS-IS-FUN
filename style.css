@@ -27,7 +27,7 @@ footer{
 }
 
 .right{
-    position: absolute;
+    position: fixed;
     
     right: 0;
     display: flex;
@@ -35,10 +35,9 @@ footer{
     justify-content: center;
     width: 100px;
     height: 100vh;
-    
 }
 
-.sm a{
+.sm a, .smr a{
     display: inline-block;
     font-size: 30px;
     /*background-color: red;*/
@@ -52,7 +51,7 @@ footer{
     position: relative;
 }
 
-.sm a::before, .sm a::after{
+.sm a::before, .sm a::after, .smr a::before, .smr a::after{
     content: '';
     position: absolute;
     box-sizing: border-box;
@@ -64,7 +63,7 @@ footer{
     transition: .4s linear;
 }
 
-.sm a:hover{
+.sm a:hover, .smr a:hover{
     transform: scale(.55);
 }
 
@@ -80,6 +79,18 @@ footer{
     transform: skewY(-20deg);
 }
 
+
+.smr a:hover::before{
+    border-left: 4px solid;
+    border-right: 4px solid;
+    transform: skewX(-20deg);
+}
+
+.smr a:hover::after{
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    transform: skewY(20deg);
+}
 
 .middle{
     position: absolute;
