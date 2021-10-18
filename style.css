@@ -37,6 +37,13 @@ footer{
     height: 100vh;
 }
 
+.bottom{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    
+}
+
 .sm a, .smr a{
     display: inline-block;
     font-size: 30px;
