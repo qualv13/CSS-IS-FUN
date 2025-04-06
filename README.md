@@ -8,9 +8,9 @@ Here’s what it looks like in action:
 
 ![Screenshot of the page](screenshot.png)
 
--->
-
 > 💡 *Make sure `screenshot.png` is added to the repo for this preview to work.*
+
+-->
 
 ## 📁 Files
 
